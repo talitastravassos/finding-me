@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { IPFindProvider } from './context/IPFindContext';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <IPFindProvider>
+    <App />
+  </IPFindProvider>,
+  document.getElementById('root'),
+);
