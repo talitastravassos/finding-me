@@ -1,4 +1,4 @@
-import { IAction, IState } from '../types/IPFindContext.types';
+import { IAction, IState } from '../../types/IPFindContext.types';
 
 export const reducer = (state: IState, action: IAction): IState => {
   switch (action.type) {

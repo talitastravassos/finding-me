@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
+import { IContextModel, IState } from '../../types/IPFindContext.types';
 import { reducer } from '../reducers/StateReducer';
-import { IContextModel, IState } from '../types/IPFindContext.types';
 
 export const defaultState: IState = {
   location: null,

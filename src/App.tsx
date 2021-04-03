@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react';
-import { getLocation } from './actions/IPFindActions';
 import Map from './components/Map';
-import { IPFindContext } from './context/IPFindContext';
 import { getLocationFromAPI } from './services/IPFindService';
+import { getLocation } from './state/actions/IPFindActions';
+import { IPFindContext } from './state/context/IPFindContext';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
