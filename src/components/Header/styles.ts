@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import bg from '../../images/pattern-bg.png';
 
 export const Wrapper = styled.section`
+  display: inline-block;
   background-image: url(${bg});
   background-size: 100% 100%;
   background-position: center;
