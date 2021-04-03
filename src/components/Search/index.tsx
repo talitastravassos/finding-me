@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import iconArrow from '../../images/icon-arrow.svg';
+import { getLocationFromAPI } from '../../services/IPFindService';
+import { getLocation } from '../../state/actions/IPFindActions';
+import { IPFindContext } from '../../state/context/IPFindContext';
+import { validateSearch } from '../../utils/validateSearch';
 import { Button, Input } from './styles';
 
 export const Search: React.FC = () => {
+  const { dispatch } = useContext(IPFindContext);
+
   const [state, setState] = useState('');
 
   const handleChange = (
@@ -13,7 +19,9 @@ export const Search: React.FC = () => {
   };
 
   const onClick = () => {
-    console.log(state);
+    getLocationFromAPI(validateSearch(state)).then(response =>
+      dispatch(getLocation(response)),
+    );
   };
 
   return (
