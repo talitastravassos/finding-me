@@ -13,6 +13,12 @@ export const Input = styled.input`
   :focus {
     outline: none;
   }
+
+  @media (max-width: 700px) {
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -31,5 +37,9 @@ export const Button = styled.button`
 
   :active {
     background: rgba(0, 0, 0, 0.6);
+  }
+
+  @media (max-width: 700px) {
+    padding: 1.1rem;
   }
 `;
