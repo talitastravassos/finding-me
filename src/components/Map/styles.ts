@@ -5,7 +5,7 @@ import Marker from '../../images/icon-location.svg';
 export const Wrapper = styled.div`
   .leaflet-container {
     width: 100%;
-    height: 100vh;
+    height: 60vh;
   }
 
   .leaflet-div-icon {

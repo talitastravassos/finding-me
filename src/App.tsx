@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Header } from './components/Header';
 import Map from './components/Map';
 import { getLocationFromAPI } from './services/IPFindService';
 import { getLocation } from './state/actions/IPFindActions';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
+      <Header />
       {location && (
         <Map location={[location.location.lat, location.location.lng]} />
       )}
