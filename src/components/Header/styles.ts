@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '../../images/pattern-bg.png';
+import bg from '../../assets/pattern-bg.png';
 
 export const Wrapper = styled.section`
   display: inline-block;

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import iconArrow from '../../images/icon-arrow.svg';
+import iconArrow from '../../assets/icon-arrow.svg';
 import { getLocationFromAPI } from '../../services/IPFindService';
 import { getLocation } from '../../state/actions/IPFindActions';
 import { IPFindContext } from '../../state/context/IPFindContext';

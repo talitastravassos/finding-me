@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import styled from 'styled-components';
-import Marker from '../../images/icon-location.svg';
+import Marker from '../../assets/icon-location.svg';
 
 export const Wrapper = styled.div`
   .leaflet-container {
