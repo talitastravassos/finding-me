@@ -17,7 +17,7 @@ const FlyToLocation: React.FC<Props> = ({ location }) => {
 
   return location === null ? null : (
     <Marker position={location} icon={iconMarker}>
-      <Popup>You are here</Popup>
+      <Popup>Your location is here</Popup>
     </Marker>
   );
 };

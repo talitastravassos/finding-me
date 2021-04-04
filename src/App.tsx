@@ -18,10 +18,6 @@ const App: React.FC = () => {
     getLocationFromAPI().then(response => dispatch(getLocation(response)));
   }, [dispatch]);
 
-  useEffect(() => {
-    console.log({ location });
-  }, [location]);
-
   return (
     <>
       <GlobalStyle />
