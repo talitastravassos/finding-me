@@ -9,13 +9,14 @@ export const Input = styled.input`
   font-size: inherit;
   color: #969696;
   font-family: inherit;
+  height: 4.5rem;
 
   :focus {
     outline: none;
   }
 
   @media (max-width: 700px) {
-    width: 15rem;
+    width: 16rem;
     padding: 1rem;
     font-size: 1rem;
   }
@@ -26,6 +27,7 @@ export const Button = styled.button`
   padding: 1.6rem;
   border-radius: 0 1rem 1rem 0;
   border: none;
+  height: 4.5rem;
 
   :focus {
     outline: none;
