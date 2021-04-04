@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -11,4 +11,9 @@ export default createGlobalStyle`
     color: #333;
      font-family: 'Rubik', sans-serif;
   }
+`;
+
+export const Container = styled.div`
+  text-align: center;
+  padding: 4rem;
 `;
