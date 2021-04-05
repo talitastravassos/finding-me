@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   height: 10rem;
   border-radius: 1rem;
@@ -15,10 +15,10 @@ export const Wrapper = styled.section`
   right: 10%;
 
   .item {
-    padding: 0 1rem;
+    padding: 0 0.8rem;
     max-height: 4rem;
     margin: auto;
-    min-width: 12rem;
+    min-width: 19rem;
 
     :not(:last-child) {
       border-right: 1px solid RGBA(150, 150, 150, 0.6);
@@ -46,6 +46,8 @@ export const Wrapper = styled.section`
     right: 40px;
 
     .item {
+      min-width: 12rem;
+
       :not(:last-child) {
         border-right: none;
       }
