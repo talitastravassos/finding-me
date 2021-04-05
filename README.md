@@ -18,7 +18,7 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### Screenshot
-![Finding Me! Screenshot](https://i.imgur.com/EHzon0V.png)
+![Finding Me! Screenshot](https://i.imgur.com/FM0fMqD.png)
 
 ### Live Demo
 - https://finding-me.netlify.app/
