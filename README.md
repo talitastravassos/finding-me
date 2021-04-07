@@ -1,4 +1,5 @@
 ## Quick start
+The project uses the API https://geo.ipify.org/ which uses a key for authentication that can be obtained after registering in the API. For the correct operation of the project locally it is necessary to create the variable `REACT_APP_API_KEY` in the `.env` file that will receive as value the key obtained in ipify.
 
 In the project directory:
 
