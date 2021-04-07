@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { ILocation } from '../types/IPFindContext.types';
 
-const URL_API = 'https://geo.ipify.org/api/v1?';
+export const URL_API = 'https://geo.ipify.org/api/v1?';
 
 export const getLocationFromAPI = async (
   search?: string,

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 70%;
   height: 10rem;
   border-radius: 1rem;
   background: white;
@@ -12,16 +12,20 @@ export const Wrapper = styled.section`
   position: absolute;
   z-index: 10;
   top: 30%;
-  right: 10%;
+  right: 15%;
 
   .item {
     padding: 0 0.8rem;
-    max-height: 4rem;
+    height: 4rem;
     margin: auto;
-    min-width: 19rem;
+    width: 15rem;
 
     :not(:last-child) {
       border-right: 1px solid RGBA(150, 150, 150, 0.6);
+    }
+
+    :last-child {
+      width: 20rem;
     }
 
     span {
@@ -40,16 +44,21 @@ export const Wrapper = styled.section`
 
   @media (max-width: 700px) {
     flex-direction: column;
-    min-height: 17rem;
+    min-height: 18rem;
+    width: 80%;
     text-align: center;
     padding: 1rem;
     right: 40px;
 
     .item {
-      min-width: 12rem;
+      width: 14rem;
 
       :not(:last-child) {
         border-right: none;
+      }
+
+      :last-child {
+        width: 17rem;
       }
 
       span {
