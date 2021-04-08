@@ -1,4 +1,5 @@
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import { Header } from '.';
 
 describe('Header Component', () => {
@@ -6,5 +7,10 @@ describe('Header Component', () => {
     const wrapper = shallow(<Header />);
 
     expect(wrapper.exists()).toBeTruthy();
+  });
+
+  it('render correctly header component', () => {
+    const HeaderComponent = renderer.create(<Header />).toJSON();
+    expect(HeaderComponent).toMatchSnapshot();
   });
 });
